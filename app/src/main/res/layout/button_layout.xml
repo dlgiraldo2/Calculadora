@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rowCount="5"
+        app:columnCount="4">
+    <!--Fila 1-->
+        <!--Boton CA-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="CA"
+            android:textColor="#DCD6D6"
+            android:textSize="24sp"
+            android:onClick="limpiar"
+            android:background="@drawable/boton_operaciones"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <!--Boton C-->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="C"
+            android:textColor="#DCD6D6"
+            android:textSize="24sp"
+            android:onClick="limpiar"
+            android:background="@drawable/boton_operaciones"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <!--Boton %-->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="%"
+            android:textColor="#DCD6D6"
+            android:textSize="24sp"
+            android:onClick="cambiarOperador"
+            android:background="@drawable/boton_operaciones"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <!--Boton /-->
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="/"
+            android:textColor="#DCD6D6"
+            android:textSize="24sp"
+            android:onClick="cambiarOperador"
+            android:background="@drawable/boton_operaciones"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+    <!--Fila 2-->
+        <!--Boton 7-->
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/boton_numerico"
+            android:backgroundTintMode="add"
+            android:onClick="numeroPresionado"
+            android:text="7"
+            android:textColor="#673AB7"
+            android:textColorLink="@color/white"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <!--Boton 8-->
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="8"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:onClick="numeroPresionado"
+            android:background="@drawable/boton_numerico"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <!--Boton 9-->
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="9"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:onClick="numeroPresionado"
+            android:background="@drawable/boton_numerico"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <!--Boton X-->
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="X"
+            android:textColor="#DCD6D6"
+            android:textSize="24sp"
+            android:onClick="cambiarOperador"
+            android:background="@drawable/boton_operaciones"
+            app:layout_column="3"
+            app:layout_row="1" />
+    <!--Fila 3-->
+        <!--Boton 4-->
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="4"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:onClick="numeroPresionado"
+            android:background="@drawable/boton_numerico"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <!--Boton 5-->
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="5"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:onClick="numeroPresionado"
+            android:background="@drawable/boton_numerico"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <!--Boton 6-->
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="6"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:onClick="numeroPresionado"
+            android:background="@drawable/boton_numerico"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <!--Boton "-" -->
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="-"
+            android:textColor="#DCD6D6"
+            android:textSize="24sp"
+            android:onClick="cambiarOperador"
+            android:background="@drawable/boton_operaciones"
+            app:layout_column="3"
+            app:layout_row="2" />
+    <!--Fila 4-->
+        <!--Boton 1-->
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="1"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:onClick="numeroPresionado"
+            android:background="@drawable/boton_numerico"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <!--Boton 2-->
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="2"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:onClick="numeroPresionado"
+            android:background="@drawable/boton_numerico"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <!--Boton 3-->
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="3"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:onClick="numeroPresionado"
+            android:background="@drawable/boton_numerico"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <!--Boton +-->
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="+"
+            android:textColor="#DCD6D6"
+            android:textSize="24sp"
+            android:onClick="cambiarOperador"
+            android:background="@drawable/boton_operaciones"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+    <!--Fila 5-->
+        <!--Boton 0-->
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="0"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:onClick="numeroPresionado"
+            android:background="@drawable/boton_numerico"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <!--Boton "."-->
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:text="."
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:background="@drawable/boton_numerico"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <!--Boton "="-->
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/boton_operaciones"
+            android:text="="
+            android:textColor="#DCD6D6"
+            android:textSize="24sp"
+            app:layout_column="2"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_row="4" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
